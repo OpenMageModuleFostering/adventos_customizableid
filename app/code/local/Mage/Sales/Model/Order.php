@@ -2041,16 +2041,16 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
                 ->fetchNewIncrementId($this->getStoreId());
             $this->setIncrementId($incrementId);
         }
-        
-        if (Mage::getStoreConfig('adventos/customizableId/process') && strlen($this->getIncrementId()) == 9 ){
-			$custom_prefix = Mage::getStoreConfig('adventos/customizableId/order_prefix');
-			if (Mage::getStoreConfig('adventos/customizableId/process_country')){
-				$country = $this->getBillingAddress()->getCountry();
-				$this->setIncrementId(strtoupper($custom_prefix).strtoupper($country).$this->getIncrementId());
-			}else{
-				$this->setIncrementId(strtoupper($custom_prefix).$this->getIncrementId());
-			}
+
+        if (Mage::getStoreConfig('adventos/customizableId/process') && ctype_digit($this->getIncrementId())){
+		$custom_prefix = Mage::getStoreConfig('adventos/customizableId/order_prefix');
+		if (Mage::getStoreConfig('adventos/customizableId/process_country')){
+			$country = $this->getBillingAddress()->getCountry();
+			$this->setIncrementId(strtoupper($custom_prefix).strtoupper($country).$this->getIncrementId());
+		}else{
+			$this->setIncrementId(strtoupper($custom_prefix).$this->getIncrementId());
 		}
+	}
 
         /**
          * Process items dependency for new order

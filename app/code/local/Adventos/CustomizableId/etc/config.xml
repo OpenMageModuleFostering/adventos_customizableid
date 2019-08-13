@@ -2,7 +2,7 @@
 <config>
 	<modules>
 		<Adventos_CustomizableId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</Adventos_CustomizableId>
 	</modules>
 	<global>

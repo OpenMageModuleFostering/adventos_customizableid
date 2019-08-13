@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <package>
     <name>Adventos_CustomizableId</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license>OSL</license>
     <channel>community</channel>
     <extends/>
     <summary>Add Prefix to OrderId</summary>
     <description>Add Custom Prefix with optinal Country Shortcut from Billing Address to OrderId.</description>
-    <notes>Init Extention</notes>
+    <notes>Bugfix&#xD;
+OrderIds with more then 9 digits will be transformed</notes>
     <authors><author><name>Karsten Hoffmann</name><user>adventos</user><email>karsten@adventos.de</email></author></authors>
-    <date>2013-01-29</date>
-    <time>12:26:11</time>
-    <contents><target name="magelocal"><dir name="Adventos"><dir name="CustomizableId"><dir name="Helper"><file name="Data.php" hash="83f8320f8eb925bd98acc33c7776bf20"/></dir><dir name="etc"><file name="config.xml" hash="f29f8c002d9704e95c564cfe3826fb23"/><file name="system.xml" hash="a31a65e697f9e9d2bb7c10db054a5b11"/></dir></dir></dir><dir name="Mage"><dir name="Sales"><dir name="Model"><file name="Order.php" hash="2bb28909440da60bcd8f4e1e9444fe55"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Adventos_CustomizableId.xml" hash="7f6a53a16a0bf2ae65a4512312a39954"/></dir></target></contents>
+    <date>2013-02-04</date>
+    <time>11:27:42</time>
+    <contents><target name="magelocal"><dir name="Adventos"><dir name="CustomizableId"><dir name="Helper"><file name="Data.php" hash="83f8320f8eb925bd98acc33c7776bf20"/></dir><dir name="etc"><file name="config.xml" hash="94c046b91817dbdb9551cd3312993400"/><file name="system.xml" hash="a31a65e697f9e9d2bb7c10db054a5b11"/></dir></dir></dir><dir name="Mage"><dir name="Sales"><dir name="Model"><file name="Order.php" hash="533ba4b0a47a166e41995bbc29211bfe"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Adventos_CustomizableId.xml" hash="7f6a53a16a0bf2ae65a4512312a39954"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
