@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Adventos_CustomizableId",
+    "name": "OpenMageModuleFostering\/Adventos_CustomizableId",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Add Prefix to OrderId",
     "authors": [
-    {
-        "name": "Karsten Hoffmann",
-        "email": "karsten@adventos.de"
-    }
-],
+        {
+            "name": "Karsten Hoffmann",
+            "email": "karsten@adventos.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
